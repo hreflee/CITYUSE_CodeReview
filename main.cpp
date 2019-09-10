@@ -20,7 +20,8 @@ int main(){
 	char player2 = 'O';
 	bool turn = true; // false for player 1's turn, true for player 2's turn. Player 1 first.
 	cout << "X = Player 1" << endl << "O = Player 2" << endl;
-       for (int n=0; n<9; n++){
+	int n;
+       for (n=0; n<9; n++){
 			turn = !turn;  // use the not-operator to change true to false or false to true.
 		    if (turn == false)
 				cout << "Player 1: ";
@@ -37,7 +38,7 @@ int main(){
 				break; // need to terminate the problem
 			}
 		}
-	if (i==3) // all celles with i=0 to 2 have been inputted above but no winner yet
+	if (n==9) // all celles with i=0 to 2 have been inputted above but no winner yet
 	   cout << "Tie!" << endl;
 
 	// show the game to console
